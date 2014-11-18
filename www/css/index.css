@@ -20,6 +20,7 @@ html, body {
 }
 
 .iconcontainer {
+	max-width: 94%;
 	padding-right: 6%;
 }
 
