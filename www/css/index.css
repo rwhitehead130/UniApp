@@ -2,8 +2,7 @@ html, body {
 	margin: 0;
 	padding: 0;
 	width: 100%;
-	max-width: 100%;
-	height: auto;
+	height: 100%;
 	background-color: #FFFFFF;
 	font-family: sans-serif;
 	text-decoration: none;
@@ -21,7 +20,7 @@ html, body {
 }
 
 .iconcontainer {
-	padding-right: 6%;
+	/*padding-right: 6%;*/
 }
 
 .icon {
