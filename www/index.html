@@ -73,20 +73,13 @@
 				<div class="icontext"><p>Photo</p></div>
            </div>
         </div>
-        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="phonegap.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">
             app.initialize();
         </script>
         <script>
-	        function capturePhoto() {
-				// Take picture using device camera and retrieve image as base64-encoded string
-				alert("Alert");
-				navigator.camera.getPicture(onPhotoDataSuccess, onFail,{
-				quality : 50, 
-				destinationType : Camera.DestinationType.FILE_URI,
-				saveToPhotoAlbum: true });
-			}
+	        
         </script>
     </body>
 </html>
