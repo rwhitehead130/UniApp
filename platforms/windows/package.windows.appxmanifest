@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!--
        Licensed to the Apache Software Foundation (ASF) under one
        or more contributor license agreements.  See the NOTICE file
@@ -18,32 +18,27 @@
        under the License.
 -->
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest">
-  <Identity Name="bf69abf0-710b-11e4-b6d4-994d2c8b6b98" Version="1.0.0.0" Publisher="CN=$username$" />
-  <Properties>
-    <DisplayName>com.example.hello</DisplayName>
-    <PublisherDisplayName>$username$</PublisherDisplayName>
-    <Logo>images\storelogo.png</Logo>
-  </Properties>
-  <Prerequisites>
-    <OSMinVersion>6.3.0</OSMinVersion>
-    <OSMaxVersionTested>6.3.0</OSMaxVersionTested>
-  </Prerequisites>
-  <Resources>
-    <Resource Language="x-generate" />
-  </Resources>
-  <Applications>
-    <Application Id="Hello_World" StartPage="www/index.html">
-      <m2:VisualElements DisplayName="com.example.hello" 
-                         Description="CordovaApp"
-                         ForegroundText="light"
-                         BackgroundColor="#464646"
-                         Square150x150Logo="images\Logo.png"
-                         Square30x30Logo="images\SmallLogo.png">
-        <m2:SplashScreen Image="images\splashscreen.png" />
-      </m2:VisualElements>
-    </Application>
-  </Applications>
-  <Capabilities>
-    <Capability Name="internetClient" />
-  </Capabilities>
+    <Identity Name="com.example.hello" Version="1.0.0.0" Publisher="CN=$username$" />
+    <Properties>
+        <DisplayName>com.example.hello</DisplayName>
+        <PublisherDisplayName>$username$</PublisherDisplayName>
+        <Logo>images\storelogo.png</Logo>
+    </Properties>
+    <Prerequisites>
+        <OSMinVersion>6.3.0</OSMinVersion>
+        <OSMaxVersionTested>6.3.0</OSMaxVersionTested>
+    </Prerequisites>
+    <Resources>
+        <Resource Language="x-generate" />
+    </Resources>
+    <Applications>
+        <Application Id="com.example.hello" StartPage="www/index.html">
+            <m2:VisualElements DisplayName="Hello World" Description="CordovaApp" ForegroundText="light" BackgroundColor="#464646" Square150x150Logo="images\Logo.png" Square30x30Logo="images\SmallLogo.png">
+                <m2:SplashScreen Image="images\splashscreen.png" />
+            </m2:VisualElements>
+        </Application>
+    </Applications>
+    <Capabilities>
+        <Capability Name="internetClient" />
+    </Capabilities>
 </Package>
