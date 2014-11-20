@@ -46,4 +46,17 @@ var app = {
 
         console.log('Received Event: ' + id);
     }
+    capturePhoto: function() {
+	  // Take picture using device camera and retrieve image as base64-encoded string
+	  navigator.camera.getPicture(onPhotoDataSuccess, onFail,{
+			  quality : 25, 
+			  destinationType : Camera.DestinationType.FILE_URI, 
+			  sourceType : Camera.PictureSourceType.CAMERA, 
+			  allowEdit : true,
+			  encodingType: Camera.EncodingType.JPEG,
+			  targetWidth: 500,
+			  targetHeight: 500,
+			  popoverOptions: CameraPopoverOptions,
+			  saveToPhotoAlbum: true });
+	}
 };
