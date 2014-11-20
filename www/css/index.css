@@ -17,7 +17,7 @@ html, body {
 	user-select: none;
 	
 	/*Disable horizontal dragging*/
-	 overflow: hidden;
+	 overflow-x: hidden;
 	-ms-content-zooming: none;
 	
 	/*Disable highlighting of selected(tapped) items (Android/IOS)*/
