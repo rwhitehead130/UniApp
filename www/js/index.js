@@ -33,6 +33,7 @@ var app = {
     // The scope of 'this' is the event. In order to call the 'receivedEvent'
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
+		console.log(navigator.camera);
         app.receivedEvent('deviceready');
     },
     // Update DOM on a Received Event
@@ -50,15 +51,10 @@ var app = {
 
     
 function capturePhoto() {
-  // Take picture using device camera and retrieve image as base64-encoded string
-  navigator.camera.getPicture(onPhotoDataSuccess, onFail,{
-		  quality : 25, 
-		  destinationType : Camera.DestinationType.FILE_URI, 
-		  sourceType : Camera.PictureSourceType.CAMERA, 
-		  allowEdit : true,
-		  encodingType: Camera.EncodingType.JPEG,
-		  targetWidth: 500,
-		  targetHeight: 500,
-		  popoverOptions: CameraPopoverOptions,
-		  saveToPhotoAlbum: true });
+	// Take picture using device camera and retrieve image as base64-encoded string
+	navigator.camera.getPicture(onPhotoDataSuccess, onFail,{
+	quality : 50, 
+	destinationType : Camera.DestinationType.FILE_URI,
+	allowEdit : true,
+	saveToPhotoAlbum: true });
 }
