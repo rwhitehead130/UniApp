@@ -32,6 +32,7 @@ html, body {
 	float: left;
 	padding:8% 0% 0% 8%;
 	max-width: 25%;
+	max-height: auto;
 	text-align: center;
 	margin: 0 auto; 
     overflow: visible;
