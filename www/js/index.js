@@ -83,3 +83,8 @@ function onFail(message) {
   alert('Failed because: ' + message);
 }
 
+function libraryLink() {
+	var libraryframe = document.createElement('iframe');
+	libraryframe.src = 'http://library.canterbury.ac.nz/';
+}
+
