@@ -1,7 +1,3 @@
-;(function ($) {
-    $('#main').smoothState();
-})(jQuery);
-
 var pictureSource;   // picture source
 var destinationType; // sets the format of returned value 
 
